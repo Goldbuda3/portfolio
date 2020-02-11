@@ -1,0 +1,820 @@
+
+
+html {
+    font-size: 12px;
+    scroll-behavior: smooth;
+    
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue';
+    
+}
+
+* { 
+    color:#fff; 
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+h5{
+    margin:0;
+}
+
+h2{
+    margin-bottom: .5rem;
+}
+
+section {
+    width: 100%;
+    margin: 0;
+    max-width: none;
+    height: 100vh;
+}
+
+
+
+.first {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+
+.type-container {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    vertical-align: center;
+    margin-bottom: 4.5rem;
+}
+
+.type-container p{
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.divider{
+    background-color: black;
+    width: 30%;
+    height: .5rem;
+    outline: none;
+    margin-bottom: 5rem;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    
+    overflow: hidden;
+    border-style: none;
+}
+
+.text-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0px;
+    /* border-style: solid;
+    color: black; */
+}
+
+.text-container p{
+    font-size: 1.3rem;
+}
+
+h4{
+    font-size: 3rem;
+    margin: 1rem;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    margin: 1rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* .about-me {
+    background-color: rgb(20, 20, 20);
+} */
+
+.content{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 8rem;
+    margin-top: 2rem;
+}
+
+.about-icons{
+    /* border-style: solid;
+    border-color: black; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
+.about-icon{
+    font-size: 4rem;
+    padding: .5rem;
+}
+.about-icon:hover{
+    transition: all 0.5s ease;
+    color: #E12D1D;
+}
+.about-icon i{
+    color: #545454;
+}
+
+.image-box{
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-image img{
+    width: 100%;
+}
+
+.project-content{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: #EDEDED;
+}
+
+
+.project-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0px;
+    /* border-style: solid;
+    color: black; */
+    padding: 1rem;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.41);
+}
+
+.card-title{
+    background-color: #E12D1D;
+    padding: .2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title h4{
+    color: #fff;
+    font-size: 1.5rem;
+    margin:1rem;
+}
+
+
+.card-image{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-image i{
+    color: #fff;
+    opacity: .8;
+    z-index: 99;
+    font-size: 5rem;
+    position: absolute;
+    margin-top: 4.5rem;
+}
+
+.card-image i:hover{
+    transition: all 0.5s ease;
+    font-size: 6rem;
+    color: #E12D1D;
+}
+
+.card-description {
+    margin-top: 0;
+}
+.card-description p{
+    padding-left: .8rem;
+    padding-right: .8rem;
+    font-size: 1.2rem;
+}
+
+.card hr{
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: none;
+    background-color: #DBDBDB;
+    width: 75%;
+    height: .1rem;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.projects .projects-divider {
+    width: 25%;
+
+}
+
+.skills .divider{
+    width: 15%;
+
+}
+
+.card-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-icon {
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.card-icon i{
+    color: #545454;
+    font-size: 2.5rem;
+}
+
+.card-icon i:hover{
+    color: #E12D1D;
+    transition: all 0.5s ease;
+}
+
+.project-buttons{
+    margin-top: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-button{
+    background-color: #E12D1D;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 8rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    width: 8rem;
+}
+
+.project-button h5{
+    font-size: 1.5rem;
+}
+
+.skill-content{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 8rem;
+    margin-top: 2rem;
+}
+
+.skill-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 1rem;
+    background-color: #2B4764 ;
+    border-radius: 15px;
+}
+
+.skill-icon {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skill-icon i{
+    color: #fff;
+    font-size: 5rem;
+}
+
+.skill-icon i:hover{
+    color: #E12D1D;
+    transition: all 0.5s ease;
+}
+
+.footer-content{
+    padding: 2rem;
+    background-color: black;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0rem;
+}
+
+
+.footer-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-icon {
+    padding: .8rem;
+    margin-bottom: 0rem;
+}
+
+.footer-icon i{
+    color: #545454;
+    font-size: 4rem;
+}
+
+.footer-icon i:hover{
+    color: #E12D1D;
+    transition: all 0.5s ease;
+}
+
+.title-icon{
+    display: none;
+}
+
+
+/* .navbar{
+    display: none;
+} */
+
+
+
+
+
+@media only screen and (min-width: 1425px){
+
+    html{
+        font-size: 14px;
+    }
+
+
+    .type-container p{
+        font-size: 2.5rem;
+    }
+
+    .image-box{
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    max-width: 40rem;
+    height: auto;
+    }
+    
+    .text-container {
+        max-width: 45rem;
+        margin-right: 5rem;
+    }
+
+    .about-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+
+
+    .content{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 8rem;
+    margin-bottom: 10rem;
+    }
+
+    .text-container p{
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        padding-bottom: .5rem;
+        font-size: 1.2rem;
+    }
+
+    .divider{
+        margin-bottom: 8rem;
+        width: 12%;
+    }
+
+    .project-content{
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-top: 8rem;
+        margin-bottom: 10rem;
+    }
+
+    .about-me .divider{
+        width: 10rem;
+    }
+
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card{
+        max-width: 30rem;
+        margin: 2rem;
+    }
+
+    .project-buttons{
+        display: none;
+    }
+
+    .card-image i{
+        margin-top: 5%;
+        font-size: 6rem;
+    }
+
+    .project-content{
+        padding-bottom: 12rem;
+    }
+
+    .card-title{
+        display: flex;
+        justify-content: flex-end;
+        justify-content: space-between;
+    }
+
+    .title-icons{
+        display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-right: 1rem;
+    }
+
+    .title-icon {
+        display: flex;
+        align-self: flex-end;
+        margin-left: 1rem;
+    }
+
+    .title-icon i{
+        color: black;
+        font-size: 2.1rem;
+    }
+
+    .title-icon i:hover{
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+
+    .skills .divider{
+        width: 5rem;
+    }
+
+    .skill-container{
+        margin-left: 15rem;
+        margin-right: 15rem;
+        margin-bottom: 15rem;
+    }
+
+    .skill-icon i{
+        font-size: 8rem;
+        margin: 1rem;
+    }
+
+    .projects .projects-divider{
+        width: 8rem;
+    }
+
+    .about-icon{
+        font-size: 4rem;
+        padding: .5rem;
+    }
+    .about-icon i:hover{
+        transition: all 0.5s ease;
+        color: #E12D1D;
+    }
+
+    .resume hr{
+        width: 8rem
+    }
+}
+
+
+@media only screen and (max-width: 1424px) and (min-width: 1091px) {
+    html{
+        font-size: 14px;
+    }
+
+
+    .type-container p{
+        font-size: 2.5rem;
+    }
+
+    .image-box{
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    width: 40%;
+    height: auto;
+    }
+    
+    .text-container {
+        max-width: 60%;
+    }
+
+    .about-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+
+
+    .content{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 8rem;
+    margin-bottom: 10rem;
+    }
+
+    .text-container p{
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        padding-bottom: .5rem;
+        font-size: 1.2rem;
+    }
+
+    .divider{
+        margin-bottom: 8rem;
+        width: 12%;
+    }
+
+    .project-content{
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-top: 8rem;
+        margin-bottom: 10rem;
+    }
+
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card{
+        max-width: 45%;
+        margin: 2rem;
+    }
+
+    .project-buttons{
+        display: none;
+    }
+
+    .card-image i{
+        margin-top: 5%;
+        font-size: 6rem;
+    }
+
+    .project-content{
+        padding-bottom: 12rem;
+    }
+
+    .card-title{
+        display: flex;
+        justify-content: flex-end;
+        justify-content: space-between;
+    }
+
+    .title-icons{
+        display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-right: 1rem;
+    }
+
+    .title-icon {
+        display: flex;
+        align-self: flex-end;
+        margin-left: 1rem;
+    }
+
+    .title-icon i{
+        color: black;
+        font-size: 2.1rem;
+    }
+
+    .title-icon i:hover{
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+
+    .skills .divider{
+        width: 5%;
+    }
+
+    .skill-container{
+        margin-left: 15rem;
+        margin-right: 15rem;
+        margin-bottom: 15rem;
+    }
+
+    .skill-icon i{
+        font-size: 8rem;
+        margin: 1rem;
+    }
+
+    .projects .projects-divider{
+        width: 10%;
+    }
+
+    .about-icon{
+        font-size: 4rem;
+        padding: .5rem;
+    }
+    .about-icon i:hover{
+        transition: all 0.5s ease;
+        color: #E12D1D;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 1090px) and (min-width: 500px) {
+
+    .type-container p{
+        font-size: 2.5rem;
+
+    }
+
+    .projects .projects-divider{
+        width: 10%;
+    }
+    
+
+
+    .image-box{
+    margin-bottom: 4rem;
+    width: 35rem;
+    height: auto;
+    }
+    
+    .text-container {
+        max-width: 75%;
+        min-width: 28rem;
+    }
+
+    .about-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+
+    .content{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 8rem;
+    margin-bottom: 10rem;
+    }
+
+    .text-container p{
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .divider{
+        margin-bottom: 8rem;
+        width: 15%;
+    }
+    
+    .card{
+        max-width: 30rem;
+        min-width: 28rem;
+        margin-bottom: 8rem;
+    }
+
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .card-description{
+        padding: 1rem;
+    }
+
+    .card-description p{
+        font-size: 1.3rem;
+    }
+
+    .card-image i{
+        font-size: 8rem;
+    }
+
+    .card-image i:hover{
+        font-size: 8rem;
+    }
+
+    .project-content{
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    .card-title{
+        display: flex;
+        justify-content: flex-end;
+        justify-content: space-between;
+    }
+
+
+    .title-icons{
+        display: flex;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-right: 1rem;
+    }
+
+    .title-icon {
+        display: flex;
+        align-self: flex-end;
+        margin-left: 1rem;
+    }
+
+    .title-icon i{
+        color: black;
+        font-size: 2.1rem;
+    }
+
+    .title-icon i{
+        color: black;
+        font-size: 2.1rem;
+    }
+
+    .title-icon i:hover{
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+
+    .project-buttons{
+        display: none;
+    }
+
+    .skill-container{
+        margin-left: 15rem;
+        margin-right: 15rem;
+        margin-bottom: 15rem;
+    }
+
+    .skill-icon i{
+        font-size: 8rem;
+        margin: 1rem;
+    }
+
+
+
+    .about-icon i:hover{
+        transition: all 0.5s ease;
+        color: #E12D1D;
+    }
+
+    .skills .divider{
+        width: 5%;
+    }
+
+}

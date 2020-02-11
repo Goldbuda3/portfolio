@@ -1,7 +1,8 @@
 html {
-    /* display: flex; */
-    /* justify-content: center; */
+    display: flex;
+    justify-content: center;
 }
+
 body {
     /* display: flex; */
     margin: 0;
@@ -20,6 +21,24 @@ h2 {
     padding-top: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    border-style: solid;
+    color: black;
+}
+
+.divider{
+    background-color: black;
+    width: 30%;
+    height: .5rem;
+    outline: none;
+    margin-bottom: 5rem;
+}
+.image-box{
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-image img{
+    width: 100%;
 }
 .projects-container{
     display: flex;
