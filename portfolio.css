@@ -6,6 +6,7 @@ html {
 body {
     /* display: flex; */
     margin: 0;
+    background-color: blanchedalmond
 }
 
 h2 {
@@ -25,20 +26,30 @@ h2 {
     color: black;
 }
 
-.divider{
-    background-color: black;
-    width: 30%;
-    height: .5rem;
-    outline: none;
-    margin-bottom: 5rem;
-}
-.image-box{
-    padding-left: 1rem;
-    margin-bottom: 1rem;
+.about-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0px;
+    border-style: solid;
+    color: black;
+    padding: 1rem;   
 }
 
+.about-me{
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    width: 75%;  
+    align-content: center;
+}
 .about-image img{
-    width: 100%;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    width: 75%;
+}
+
+.jumbotron {
+    border-radius: 50px;
 }
 .projects-container{
     display: flex;
@@ -50,6 +61,9 @@ h2 {
     padding: 1rem;
 }
 
+.card {
+    border-radius: 10px
+}
 .card:hover {
     top: -10px;
     box-shadow: 0 4px 5px rgba(0,0,0,0.3);
